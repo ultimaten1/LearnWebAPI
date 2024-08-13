@@ -1,4 +1,8 @@
 
+using LearnWebAPI.Data;
+using LearnWebAPI.Services;
+using Microsoft.EntityFrameworkCore;
+
 namespace LearnWebAPI
 {
     public class Program
@@ -6,6 +10,15 @@ namespace LearnWebAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // Add connection string.
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });            
+
+            //builder.Services.AddScoped<ITypeRepository, TypeRepository>();
+            builder.Services.AddScoped<ITypeRepository, TypeRepositoryInMemory>();
 
             // Add services to the container.
 
