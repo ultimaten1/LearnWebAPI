@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LearnWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ad350bda32902ba3039a4f3a06bccc9d0d547e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f02761d6852a3a832a5a9e2f94d19b34472009d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("LearnWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LearnWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
